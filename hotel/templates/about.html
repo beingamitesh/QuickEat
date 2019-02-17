@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	{% load staticfiles %}
+	<head>
+		<title>QuickEat</title>
+		<meta name="" content="">
+			<link  href="bootstrap/css/bootstrap.css" rel="stylesheet" rev="stylesheet"/>
+			<link rel="stylesheet" href="{% static 'dist/css/about.css' %}" type="text/css" media="all" />
+			<script src="bootstrap/js/bootstrap.min.js"></script>
+			<link  href="font-awesome/css/font-awesome.css"rel="stylesheet"/>
+			<script src="jquery-1.7.1.min.js"></script>
+	</head>
+	<body>
+		{% include "includes/landing_top.html" %}
+			<div class="col-lg-12 col-md-6 col-xs-12">
+				{% include "includes/banner1.html" %}
+				<h4 style="color:red; font-family : Times New Roman; font-size: 50px; font-weight: bold; padding-left: 500px;"">"<u>About Us</u>"</h4>
+				<br>
+				<h3 style="font-family:verdana;">QuickEat is an online portal by which you can order your food online or by sitting in a restaurant.</h3>
+  		<h4 style="font-family:verdana;">We do this by
+				Helping people discover great places around them.
+				Our information from every restaurant on a regular basis to ensure our data is fresh. Our vast community of food lovers share their reviews and photos, so you have all that you need to make an informed choice.
+				Building amazing experiences around dining.
+				Enabling restaurants to create amazing experiences.
+				With dedicated engagement and management tools, we're enabling restaurants to spend more time focusing on food itself, which translates directly to better dining experiences.</h4>
+			</div>
+			<div class="col-lg-12 col-md-6 col-xs-12">
+				<img src="{% static 'images/rest.jpg' %}" height="300" width="800" class="center">
+			</div>
+			{% include "includes/footer.html" %}
+	</body>
+</html>
